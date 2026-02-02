@@ -1,6 +1,11 @@
 from multiprocessing import process
-import os, subprocess, glob
+import os, subprocess, glob, time
 
+
+subprocess.run(f"cp Glitched/*.png ./", shell=True)
+subprocess.run(f"cp Loading/*.png ./", shell=True)
+
+# time.sleep(2)
 
 images = glob.glob("*.png")
 
@@ -98,5 +103,7 @@ for name, cursor in cursors.items():
         
     cursor.process()
 
+subprocess.run(f"rm wait.*.*.20.20.png", shell=True)
+subprocess.run(f"rm progress.*.*.20.20.png", shell=True)
 
 subprocess.run(f"sudo ./copy.sh", shell=True)

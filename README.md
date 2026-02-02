@@ -1,4 +1,5 @@
 Tarraria inspired cursors for Linux
+This is version 4.
 
 Installation: run `./copy.sh`
 ```sh
